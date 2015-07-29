@@ -95,6 +95,7 @@ input {
 .main {
   height: 200px;
   background-color: #ff0000;
+  display: none;
 }
 .main .content {
   height: 100px;
