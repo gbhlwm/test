@@ -107,11 +107,11 @@ input {
 .main .content:not(.content-1) {
   background-color: #000000;
 }
-.main .content:hover {
-  background-color: #a0a0a0;
-}
 .main .content:first-of-type {
   background-color: #FFFFFF;
+}
+.main .content:hover {
+  background-color: #a0a0a0;
 }
 .test {
   width: 100px;
