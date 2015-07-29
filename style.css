@@ -93,12 +93,14 @@ input {
   display: block;
 }
 .main {
-  height: 200px;
   background-color: #ff0000;
   display: none;
+  width: 100%;
 }
 .main .content {
   height: 100px;
+  width: 200px;
+  margin: 0 auto;
   background-color: #00ff00;
   border: 1px solid #ff0000;
 }
