@@ -82,15 +82,12 @@ input {
   clear: both;
 }
 .row .col {
-  width: 50px;
+  width: 30%;
   height: 50px;
   background-color: #00ff00;
   float: left;
   border: 1px solid #a0a0a0;
   margin-right: 5px;
-  border-radius: 9999px;
-  -webkit-border-radius: 9999px;
-  -moz-border-radius: 9999px;
 }
 .row .col p a {
   display: block;
