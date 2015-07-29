@@ -1,0 +1,72 @@
+@import 'template';
+
+@color-red : #FF0000;
+@color-green : #00FF00;
+@color-blue : #0000FF;
+@color-border : #A0A0A0;
+
+.wrapper {
+  width: 900px; margin: 0 auto;
+}
+
+.row {
+  margin-bottom: 50px; background-color: @color-red; text-align: center;
+  .clearfix();
+  .col {
+    width: 50px; height: 50px; background-color: @color-green;
+    float: left; border: 1px solid @color-border; margin-right: 5px;
+    .circle();
+    p {
+      a { display: block;}
+    }
+  }
+}
+
+.main {
+  height: 200px; background-color: @color-red;
+  .content {
+    height: 100px; background-color: @color-green; border: 1px solid @color-red;
+    &:not(.content-1) {
+      background-color: #000000;
+    }
+    &:hover {
+      background-color: @color-border;
+    }
+    &:first-of-type {
+      background-color: #FFFFFF;
+    }
+    //    &:first-child {
+    //      background-color: #FFFFFF;
+    //    }
+    //    &.active {
+    //      .wrapper();
+    //    }
+  }
+}
+
+.test {
+  width: 100px; height: 100px;
+  background-color: @color-blue; position: relative;
+  &:before {
+    content: '123';
+  }
+  &:after {
+    width: 100px; height: 10px; content: '';
+    background-color: @color-red; display: block;
+    position: absolute; top: 0;
+  }
+}
+
+.exm-1 {
+  i:first-child{ color: @color-red}
+}
+
+.exm-2 {
+  .first-child {color: red}
+}
+
+.exm-3 {
+  &:first-letter { color: @color-green;}
+}
+
+.exm-4 { .first {color: @color-green;}}
