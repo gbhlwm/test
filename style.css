@@ -65,6 +65,9 @@ input {
   width: 900px;
   margin: 0 auto;
 }
+body {
+  min-width: 500px;
+}
 .row {
   margin-bottom: 50px;
   background-color: #ff0000;
@@ -85,12 +88,16 @@ input {
   width: 30%;
   height: 50px;
   background-color: #00ff00;
-  float: left;
   border: 1px solid #a0a0a0;
-  margin-right: 5px;
+  display: inline-block;
 }
-.row .col p a {
+.row .col a {
   display: block;
+  width: 100%;
+  line-height: 50px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .main {
   background-color: #ff0000;

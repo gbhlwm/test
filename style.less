@@ -9,16 +9,18 @@
   width: 900px; margin: 0 auto;
 }
 
+body {
+  min-width: 500px;
+}
+
 .row {
   margin-bottom: 50px; background-color: @color-red; text-align: center;
   .clearfix();
   .col {
     width: 30%; height: 50px; background-color: @color-green;
-    float: left; border: 1px solid @color-border; margin-right: 5px;
+    border: 1px solid @color-border; display:inline-block;
 //    .circle();
-    p {
-      a { display: block;}
-    }
+      a { display: block; width: 100%; line-height: 50px; .nowrap();}
   }
 }
 
