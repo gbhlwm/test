@@ -1,0 +1,145 @@
+img {
+  max-width: 100%;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+strong {
+  font-weight: bold;
+}
+em {
+  font-style: italic;
+}
+del {
+  text-decoration: line-through;
+}
+input {
+  font-size: inherit;
+  color: inherit;
+}
+.text-left {
+  text-align: left;
+}
+.text-right {
+  text-align: right;
+}
+.text-center {
+  text-align: center;
+}
+.pull-left {
+  float: left;
+}
+.pull-right {
+  float: right;
+}
+.clearfix {
+  clear: both;
+  zoom: 1;
+}
+.clearfix::before {
+  content: "";
+  display: table;
+}
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.float-wrapper {
+  display: inline-block;
+  width: 100%;
+  zoom: 1;
+}
+.nowrap {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.circle {
+  border-radius: 9999px;
+  -webkit-border-radius: 9999px;
+  -moz-border-radius: 9999px;
+}
+.wrapper {
+  width: 900px;
+  margin: 0 auto;
+}
+.row {
+  margin-bottom: 50px;
+  background-color: #ff0000;
+  text-align: center;
+  clear: both;
+  zoom: 1;
+}
+.row::before {
+  content: "";
+  display: table;
+}
+.row::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.row .col {
+  width: 50px;
+  height: 50px;
+  background-color: #00ff00;
+  float: left;
+  border: 1px solid #a0a0a0;
+  margin-right: 5px;
+  border-radius: 9999px;
+  -webkit-border-radius: 9999px;
+  -moz-border-radius: 9999px;
+}
+.row .col p a {
+  display: block;
+}
+.main {
+  height: 200px;
+  background-color: #ff0000;
+}
+.main .content {
+  height: 100px;
+  background-color: #00ff00;
+  border: 1px solid #ff0000;
+}
+.main .content:not(.content-1) {
+  background-color: #000000;
+}
+.main .content:hover {
+  background-color: #a0a0a0;
+}
+.main .content:first-of-type {
+  background-color: #FFFFFF;
+}
+.test {
+  width: 100px;
+  height: 100px;
+  background-color: #0000ff;
+  position: relative;
+}
+.test:before {
+  content: '123';
+}
+.test:after {
+  width: 100px;
+  height: 10px;
+  content: '';
+  background-color: #ff0000;
+  display: block;
+  position: absolute;
+  top: 0;
+}
+.exm-1 i:first-child {
+  color: #ff0000;
+}
+.exm-2 .first-child {
+  color: red;
+}
+.exm-3:first-letter {
+  color: #00ff00;
+}
+.exm-4 .first {
+  color: #00ff00;
+}
