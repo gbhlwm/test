@@ -68,30 +68,34 @@ input {
 body {
   min-width: 500px;
 }
-.row {
+#index .owl-carousel {
+  width: 100%;
+  height: 200px;
+}
+#xuanzeqi .row {
   margin-bottom: 50px;
   background-color: #ff0000;
   text-align: center;
   clear: both;
   zoom: 1;
 }
-.row::before {
+#xuanzeqi .row::before {
   content: "";
   display: table;
 }
-.row::after {
+#xuanzeqi .row::after {
   content: "";
   display: table;
   clear: both;
 }
-.row .col {
+#xuanzeqi .row .col {
   width: 30%;
   height: 50px;
   background-color: #00ff00;
   border: 1px solid #a0a0a0;
   display: inline-block;
 }
-.row .col a {
+#xuanzeqi .row .col a {
   display: block;
   width: 100%;
   line-height: 50px;
@@ -99,37 +103,49 @@ body {
   overflow: hidden;
   text-overflow: ellipsis;
 }
-.main {
+#xuanzeqi .main {
   background-color: #ff0000;
   display: none;
   width: 100%;
 }
-.main .content {
+#xuanzeqi .main .content {
   height: 100px;
   width: 200px;
   margin: 0 auto;
   background-color: #00ff00;
   border: 1px solid #ff0000;
 }
-.main .content:not(.content-1) {
+#xuanzeqi .main .content:not(.content-1) {
   background-color: #000000;
 }
-.main .content:first-of-type {
+#xuanzeqi .main .content:first-of-type {
   background-color: #FFFFFF;
 }
-.main .content:hover {
+#xuanzeqi .main .content:hover {
   background-color: #a0a0a0;
 }
-.test {
+#exm .exm-1 i:first-child {
+  color: #ff0000;
+}
+#exm .exm-2 .first-child {
+  color: red;
+}
+#exm .exm-3:first-letter {
+  color: #00ff00;
+}
+#exm .exm-4 .first {
+  color: #00ff00;
+}
+#before-after .test {
   width: 100px;
   height: 100px;
   background-color: #0000ff;
   position: relative;
 }
-.test:before {
+#before-after .test:before {
   content: '123';
 }
-.test:after {
+#before-after .test:after {
   width: 100px;
   height: 10px;
   content: '';
@@ -137,16 +153,4 @@ body {
   display: block;
   position: absolute;
   top: 0;
-}
-.exm-1 i:first-child {
-  color: #ff0000;
-}
-.exm-2 .first-child {
-  color: red;
-}
-.exm-3:first-letter {
-  color: #00ff00;
-}
-.exm-4 .first {
-  color: #00ff00;
 }
