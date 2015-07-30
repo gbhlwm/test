@@ -9,12 +9,12 @@
 <script src="jquery.min.js"></script>
 <script src="owl.carousel.js"></script>
 <link rel="stylesheet" href="owl.carousel.css">
+<link rel="stylesheet" href="owl.theme.css">
 <body id="index">
     <div class="owl-carousel">
         <div>主页是轮播插件的演示</div>
-        <div><a href="xuanzeqi.html">常用选择器</a></div>
-        <div>3</div>
-        <div>4</div>
+        <div><a href="xuanzeqi.html">常用选择器的演示</a></div>
+        <div>待续</div>
     </div>
 </body>
 <script>
@@ -25,7 +25,10 @@
                     dotsEach:false,
                     autoplay: true,
                     autoplayTimeout: 5000,
-                    loop:true
+                    loop:true,
+                    nav:true,
+                    navText:['上一页','下一页'],
+                    mouseDrag:false
                 }
         );
     });

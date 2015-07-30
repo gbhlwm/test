@@ -69,7 +69,13 @@ body {
   min-width: 500px;
 }
 #index .owl-carousel {
-  width: 100%;
+  width: 500px;
+  height: 200px;
+  margin: 0 auto;
+  background-color: red;
+}
+#index .owl-carousel .owl-item {
+  width: 500px;
   height: 200px;
 }
 #xuanzeqi .row {
